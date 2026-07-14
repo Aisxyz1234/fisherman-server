@@ -1,18 +1,3 @@
-"""
-Fisherman Safety — Backend Server
-===================================
-Deploy this to Render.com (free tier).
-
-Setup on Render:
-  1. Push this file + requirements.txt to a GitHub repo
-  2. New Web Service → connect repo → set:
-       Build Command:  pip install -r requirements.txt
-       Start Command:  gunicorn server:app
-  3. Copy the Render URL (e.g. https://fisherman-safety.onrender.com)
-  4. Paste it into tracker.html  → SERVER_URL
-  5. Paste it into coast_guard_app.py → SERVER_URL
-"""
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from datetime import datetime
